@@ -13,7 +13,7 @@ spring:
     url: jdbc:mysql://47.99.138.113:3306/petclinic?useSSL=false
     username: root
     password: justpwd
-    initialization-mode: ALWAYS
+    initialization-mode: NERVER
 server.port: 0
 # JPA
 spring.jpa.hibernate.ddl-auto: none
