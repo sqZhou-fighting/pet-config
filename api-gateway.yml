@@ -12,6 +12,14 @@ zuul:
   prefix: /api
   ignoredServices: '*'
   routes:
+    # vets.serviceId: vets-service
+    # vets.path: /vet/**
+    # visits.serviceId: visits-service
+    # visits.path: /visit/**
+    # customers.serviceId: customers-service
+    # customers.path: /customer/**
+    # api.serviceId: api-gateway
+    # api.path: /gateway/**
     vets-service: /vet/**
     visits-service: /visit/**
     customers-service: /customer/**
@@ -33,5 +41,5 @@ eureka:
       # defaultZone: http://localhost:8761/eureka/ 
       defaultZone: http://47.99.138.113:8761/eureka/
   instance:
-    instance-id: softeng-2c8g-node002
+    instance-id: 47.99.138.113
     prefer-ip-address: true
