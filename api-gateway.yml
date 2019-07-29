@@ -41,5 +41,5 @@ eureka:
       # defaultZone: http://localhost:8761/eureka/ 
       defaultZone: http://47.99.138.113:8761/eureka/
   instance:
-    instance-id: 47.99.138.113
+    instance-id: softeng-node002
     prefer-ip-address: true
