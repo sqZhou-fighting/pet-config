@@ -1,6 +1,14 @@
-﻿server:
+﻿spring:
+  profiles:
+    active:
+    - dev
+---
+spring:
+  profiles: dev
+  application: 
+    name: discovery
+server:
   port: 8761
-
 eureka:
   instance:
     hostname: localhost

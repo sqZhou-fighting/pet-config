@@ -1,12 +1,16 @@
-﻿vets:
-  cache:
-    ttl: 60
-    heap-size: 100
-
+﻿spring:
+  profiles:
+    active:
+    - dev
+---
 spring:
   profiles: dev
   application: 
     name: vets
+vets:
+  cache:
+    ttl: 60
+    heap-size: 100
 eureka:
   instance:
     # enable to register multiple app instances with a random server port
