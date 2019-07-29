@@ -1,0 +1,11 @@
+﻿spring:
+  profiles: dev
+  application: 
+    name: customers
+eureka:
+  instance:
+    # enable to register multiple app instances with a random server port
+    instance-id: ${spring.application.name}:${random.uuid}
+  client: 
+    service-url: 
+      defaultZone: http://47.99.138.113:8761/eureka/

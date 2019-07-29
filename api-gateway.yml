@@ -1,0 +1,28 @@
+zuul:
+  prefix: /api
+  ignoredServices: '*'
+  routes:
+    vets-service: /vet/**
+    visits-service: /visit/**
+    customers-service: /customer/**
+    api-gateway: /gateway/**
+
+server:
+  port: 8080
+  compression:
+    enabled: true
+    mime-types: application/json,text/css,application/javascript
+    min-response-size: 2048
+
+# Internationalization
+spring.messages.basename: messages/messages
+
+
+spring:
+  profiles: dev
+  application: 
+    name: api-gateway
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://47.99.138.113:8761/eureka/ 
