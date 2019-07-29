@@ -6,7 +6,7 @@
 spring:
   profiles: dev
   application: 
-    name: vets
+    name: vets-service
 vets:
   cache:
     ttl: 60
