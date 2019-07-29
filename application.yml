@@ -8,12 +8,18 @@ spring:
   application: 
     name: petclinic
   datasource:
-    schema: classpath*:db/mysql/schema.sql
-    data: classpath*:db/mysql/data.sql
-    url: jdbc:mysql://47.99.138.113:3306/petclinic?useSSL=false
-    username: root
-    password: justpwd
-    initialization-mode: ALWAYS
+    # schema: classpath*:db/mysql/schema.sql
+    # data: classpath*:db/mysql/data.sql
+    schema: classpath*:db/hsqldb/schema.sql
+    data: classpath*:db/hsqldb/data.sql
+    # url: jdbc:mysql://47.99.138.113:3306/petclinic?useSSL=false
+    # username: root
+    # password: justpwd
+    # initialization-mode: ALWAYS
+    sleuth:
+      sampler:
+        percentage: 1.0
+
 server.port: 0
 # JPA
 spring.jpa.hibernate.ddl-auto: none
