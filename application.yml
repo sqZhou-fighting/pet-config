@@ -15,7 +15,7 @@ spring:
     url: jdbc:mysql://47.99.138.113:3306/petclinic?useSSL=false
     username: root
     password: justpwd
-    initialization-mode: NERVER
+    initialization-mode: NEVER
     sleuth:
       sampler:
         percentage: 1.0
