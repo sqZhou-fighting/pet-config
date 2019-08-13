@@ -12,7 +12,7 @@ server:
 eureka:
   instance:
 #     hostname: localhost
-    hostname: 47.99.138.113
+    hostname: 172.16.24.195
   # standalone mode
   client:
     registerWithEureka: false
