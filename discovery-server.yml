@@ -11,7 +11,8 @@ server:
   port: 8761
 eureka:
   instance:
-    hostname: localhost
+#     hostname: localhost
+    hostname: 47.99.128.113
   # standalone mode
   client:
     registerWithEureka: false
