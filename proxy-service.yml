@@ -6,8 +6,10 @@ spring:
     name: proxy-service
     
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
-    register-with-eureka: false
+#    register-with-eureka: false
     service-url:
       defaultZone: http://172.16.24.195:8761/eureka
 #      defaultZone: http://localhost:8761/eureka
