@@ -8,15 +8,15 @@ spring:
   application: 
     name: petclinic
   datasource:
-    schema: classpath*:db/mysql/schema.sql
-    data: classpath*:db/mysql/data.sql
-#     schema: classpath*:db/hsqldb/schema.sql
-#     data: classpath*:db/hsqldb/data.sql
-    url: jdbc:mysql://172.16.24.196:3306/petclinic?useSSL=false
-#     url: jdbc:mysql://47.99.138.113:3306/petclinic?useSSL=false
-    username: root
-    password: justpwd
-    initialization-mode: NEVER
+#     schema: classpath*:db/mysql/schema.sql
+#     data: classpath*:db/mysql/data.sql
+    schema: classpath*:db/hsqldb/schema.sql
+    data: classpath*:db/hsqldb/data.sql
+#     url: jdbc:mysql://172.16.24.196:3306/petclinic?useSSL=false
+#     #url: jdbc:mysql://47.99.138.113:3306/petclinic?useSSL=false
+#     username: root
+#     password: justpwd
+#     initialization-mode: NEVER
     sleuth:
       sampler:
         percentage: 1.0
